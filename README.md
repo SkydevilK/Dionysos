@@ -1,3 +1,6 @@
+**Dionysos 프로젝트에서 제가 구현한 부분은 주석으로 @author 처리 했습니다.**
+
+
 Dionysos - Wine Web Community
 ============
 
@@ -9,7 +12,8 @@ Dionysos - Wine Web Community
 ## TEAM
 
 - #### 김병인 [Back-End] (팀장)
-   - 사용자 정보 보안과 소셜 로그인과 파일 업로드
+   - Back-End) 사용자 정보 보안과 소셜 로그인과 파일 업로드
+   - Front-End) 스마트 서치 페이지 제작
 - #### 허대원 [Back-End]
     - 와인 서비스를 위한 DB구축과 rest 서비스
 - #### 최예슬 [Front-End]

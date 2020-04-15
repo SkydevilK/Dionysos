@@ -1,0 +1,408 @@
+@charset "utf-8";
+/*! reset */
+html {
+  background: #fff;
+  color: #000;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+article,
+aside,
+audio,
+blockquote,
+body,
+canvas,
+code,
+dd,
+details,
+div,
+dl,
+dt,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+input,
+legend,
+li,
+mark,
+menu,
+nav,
+ol,
+p,
+pre,
+section,
+summary,
+td,
+textarea,
+th,
+time,
+ul,
+video {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #fff;
+  color: #444;
+  font-size: 14px;
+
+  letter-spacing: -0.5px;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: middle;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: 700;
+}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+fieldset {
+  border: 0;
+}
+legend {
+  color: #000;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+i,
+th,
+var {
+  font-weight: 400;
+  font-style: normal;
+}
+li,
+ol,
+ul {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 1;
+}
+caption,
+hr,
+legend {
+  height: 0;
+  font-size: 1px;
+  text-indent: -9999em;
+  line-height: 0;
+}
+a,
+a:active,
+a:focus,
+a:hover,
+a:link,
+a:visited {
+  font-size: 100%;
+  text-decoration: none;
+}
+a {
+  background-color: transparent;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  vertical-align: baseline;
+  line-height: 0;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+/*! print */
+@media print {
+  thead {
+    display: table-header-group;
+  }
+  img,
+  tr {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  h2,
+  h3,
+  p {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+  #header {
+    position: relative !important;
+    margin: 0 0 50px !important;
+    padding: 0 0 0 30px !important;
+    background: #811525 !important;
+    -webkit-print-color-adjust: exact;
+  }
+  #header h1 {
+    top: 25px !important;
+    padding: 5px !important;
+    -webkit-print-color-adjust: exact;
+  }
+  .logo_print {
+    display: block !important;
+  }
+  #footer,
+  #gnb,
+  #visual,
+  .location,
+  .smart_search,
+  .top_bn {
+    display: none !important;
+  }
+  .sub_visual_inner {
+    width: auto !important;
+  }
+  #content .content_inner {
+    width: auto !important;
+    margin: 0 !important;
+  }
+  #container {
+    padding-top: 0 !important;
+  }
+  /*! 이달의 와인*/
+  .product_new_wine {
+    width: 100% !important;
+  }
+  .bxl {
+    float: inherit !important;
+  }
+  .bxr {
+    float: inherit !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .product_new_wine .bxl {
+    width: 420px !important;
+  }
+  .product_new_wine .img {
+    width: 400px !important;
+  }
+  .product_new_wine .bxr {
+    width: auto !important;
+    padding-left: 20px !important;
+  }
+  .product_new_wine .bxr p {
+    overflow: visible !important;
+  }
+  .product_new_wine .bxr .sub_txt {
+    height: auto !important;
+  }
+  .product_new_wine .bxr .sub_txt .jspContainer {
+    overflow: visible !important;
+    height: auto !important;
+  }
+  .product_new_wine .bxr .sub_txt .jspPane {
+    position: relative !important;
+  }
+  .product_new_wine .bxr .sub_txt .jspVerticalBar {
+    display: none !important;
+  }
+  .bx_new_wine {
+    overflow: visible !important;
+    height: auto !important;
+  }
+  .bx_new_wine .jspContainer {
+    height: auto !important;
+  }
+  .bx_new_wine .jspPane {
+    position: relative !important;
+  }
+  .bx_new_wine .jspHorizontalBar {
+    display: none !important;
+  }
+  .monthly_products {
+    overflow: visible !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+  .monthly_products ul {
+    width: 90% !important;
+  }
+  .control_slider_bar {
+    display: none;
+  }
+  .wine_list ul {
+    margin: 0 !important;
+  }
+  .wine_list li {
+    margin: 0 !important;
+    padding: 0 0 0 145px !important;
+    background: 0 0 !important;
+  }
+  .wine_list li * {
+    height: auto !important;
+    margin: 0 !important;
+    font-size: 14px !important;
+  }
+  .wine_list li .img {
+    top: 15px !important;
+  }
+  .wine_list li .img img {
+    height: 150px !important;
+  }
+  .wine_list li .tags {
+    margin-bottom: 20px !important;
+  }
+  .wine_list li .hashtag {
+    position: relative !important;
+    top: inherit !important;
+    left: 0 !important;
+  }
+  .bx_over,
+  .pagination {
+    display: none !important;
+  }
+  /*! 와인List */
+  .product_wine {
+    display: table !important;
+    width: 100% !important;
+    margin: 0 0 60px !important;
+    padding: 0 !important;
+  }
+  .product_wine .tit {
+    margin: 0 !important;
+    padding: 35px 0 0 !important;
+    border: 0 !important;
+  }
+  .product_wine .tit span {
+    margin: 0 !important;
+  }
+  .product_wine .bxl {
+    width: 45% !important;
+    padding: 0 !important;
+  }
+  .product_wine .bxr {
+    width: 55% !important;
+    padding: 0 0 0 30px !important;
+  }
+  .product_wine .bxr p {
+    height: auto !important;
+  }
+  .related_list_wrap {
+    width: auto !important;
+    marign: 0 !important;
+  }
+  .related_list {
+    overflow: visible !important;
+  }
+  .related_list ul {
+    width: auto !important;
+  }
+  .related_list li {
+    margin: 0 !important;
+  }
+  .related_list li > a {
+    padding-top: 0 !important;
+    padding-left: 105px !important;
+  }
+  .related_list li .img {
+    width: 115px !important;
+  }
+  .related_list li .img img {
+    height: 150px !important;
+  }
+  .related_list li .hashtag {
+    position: relative !important;
+    bottom: inherit !important;
+    left: 0 !important;
+  }
+  .related_product {
+    padding: 20px 0 0 !important;
+    border-top: 2px solid #222 !important;
+    background: 0 0 !important;
+    page-break-before: always;
+  }
+  .related_product h1 {
+    text-align: left !important;
+  }
+  .detail_wine .btn_area {
+    display: none !important;
+  }
+  .related_list li strong.tit {
+    overflow: visible !important;
+    height: auto !important;
+  }
+  .product_info {
+    width: 100% !important;
+    margin: 0 0 20px !important;
+  }
+  .tasting_note {
+    border: 1px solid #444 !important;
+  }
+  /*! 와인 뉴스 */
+  .list_news li {
+    float: none !important;
+  }
+  .list_news li a {
+    width: auto !important;
+    height: auto !important;
+  }
+  .list_news li a .txt {
+    overflow: visible !important;
+    height: auto !important;
+    margin: 0 !important;
+  }
+  .list_news li a strong {
+    font-size: 18px !important;
+  }
+  .list_news li a > div {
+    padding: 0 !important;
+    border: 0 !important;
+  }
+}

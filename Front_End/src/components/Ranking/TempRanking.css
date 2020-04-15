@@ -1,0 +1,180 @@
+div {
+  display: block;
+}
+
+.monthly_products {
+  height: 375px;
+  width: 1200px;
+}
+
+element.style {
+  overflow: hidden;
+  padding: 0px;
+  width: 1200px;
+}
+
+.horizontal-only {
+  height: auto;
+  max-height: 375px;
+  width: 1200px;
+}
+.jspContainer {
+  overflow: hidden;
+  position: relative;
+}
+
+.hide_txt {
+  display: inline-block;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  font-size: 1px;
+  line-height: 0;
+  clip: rect(1px 1px 1px 1px);
+}
+
+.jspPane {
+  position: absolute;
+  width: 1200px;
+}
+.scroll-pane {
+  overflow: auto;
+  width: 1200px;
+  height: 375px;
+}
+
+.bx_new_wine {
+  position: relative;
+  width: 1200px;
+}
+.tit40_line {
+  position: relative;
+  margin: 0 0 40px;
+  padding: 0 0 16px;
+  color: #222;
+  font-size: 40px;
+  font-family: NanumSquare;
+  text-align: center;
+  letter-spacing: -2px;
+}
+.tit40_line:after {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 50px;
+  height: 1px;
+  margin: 0 0 0 -25px;
+  background: #222;
+  line-height: 1;
+  content: "";
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+li,
+ol,
+ul {
+  list-style: none;
+}
+
+.monthly_products li {
+  float: left;
+  position: relative;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.clfix:after,
+.clfix:before {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.monthly_products {
+  height: 375px;
+}
+.monthly_products li a > div {
+  width: 198px;
+  height: 282px;
+  padding: 20px 10px 0;
+  border: 4px solid #fff;
+}
+
+.monthly_products li a > div {
+  width: 198px;
+  height: 282px;
+  padding: 20px 10px 0;
+  border: 4px solid #fff;
+}
+
+.monthly_products li a {
+  display: block;
+  width: 229px;
+  height: 313px;
+  padding: 3px 0 0 3px;
+  border: 4px solid #fff;
+  background: #fff;
+  text-align: center;
+}
+
+.monthly_products li .img {
+  position: relative;
+  height: 210px;
+  margin: 0 0 11px;
+}
+
+.monthly_products li .img img {
+  position: relative;
+  z-index: 1;
+  height: 202px;
+}
+a,
+a:active,
+a:focus,
+a:hover,
+a:link,
+a:visited {
+  font-size: 100%;
+  text-decoration: none;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+.monthly_products li .tit {
+  display: block;
+  overflow: hidden;
+  height: 46px;
+  color: #222;
+  font-size: 15px;
+  text-align: center;
+  word-break: keep-all;
+  letter-spacing: -1.5px;
+}
+
+.ctype {
+  display: block;
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  width: 130px;
+  height: 130px;
+  margin-left: -65px;
+}
+main {
+  background-color: white;
+  display: block;
+}

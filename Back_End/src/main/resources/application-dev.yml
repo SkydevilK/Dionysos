@@ -1,0 +1,65 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://54.180.9.92:3306/wineproject?serverTimezone=UTC
+    username: test
+    password: 1234
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+      
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+  messages:
+    basename: exception
+    encoding: UTF-8
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ssafytest@gmail.com
+    password: 1q2w!@QW
+    properties:
+      mail:
+        transport:
+          protocol: smtp
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+        debug: true      
+    encoding: UTF-8
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 100MB
+      max-request-size: 200MB
+server:
+  servlet:
+    context-path: /WineProject
+  port: 8090
+  ssl:
+    key-store: classpath:keystore.p12
+    key-store-type: PKCS12
+    key-store-password: 1q2w3e4r
+logging:
+  level:
+    com:
+      andy: trace
+file:
+  img-wine: Img/Wine
+  img-feed: Img/Feed
+  img-profile: Img/Profile
+  img-background: Img/Background
+## 프로젝트내의 폴더에 업로드 파일을 설정하고 싶으면 16번째 줄처럼 
+## 본인 PC의 특정 dir에 업로드 하고 싶으면 17번쨰 줄처럼 설정한다. 
+#file.upload-dir=./uploads 
+#file.upload-dir=/Users/pang/Documents/UPLOAD_FILES    

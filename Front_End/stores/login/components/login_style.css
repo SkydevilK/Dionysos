@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  /* font-family: montserrat; */
+  box-sizing: border-box;
+}
+.login {
+  font-size: 24px;
+  text-align: center;
+}
+.login-form {
+  width: 360px;
+  background: #ffffff;
+  height: 650px;
+  padding: 80px 40px;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login-form h1 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.txtb {
+  border-bottom: 2px solid #adadad;
+  position: relative;
+  margin: 30px 0;
+}
+
+.txtb input {
+  font-size: 15px;
+  color: #333;
+  border: none;
+  width: 100%;
+  outline: none;
+  background: none;
+  padding: 0 5px;
+  height: 40px;
+}
+
+.txtb span::before {
+  content: attr(data-placeholder);
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.txtb span::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(120deg, #3498db, #8e44ad);
+  transition: 0.5s;
+}
+
+.focus + span::before {
+  top: -5px;
+}
+.focus + span::after {
+  width: 100%;
+}
+
+.logbtn {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border: none;
+  color: #fff;
+  background-color: #3f51b5;
+  background-size: 200%;
+  /* color: #fff; */
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.logbtn:hover {
+  opacity: 0.6;
+}
+
+.logbtn:active {
+  opacity: 1;
+}
+
+.bottom-text {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login100-social-item {
+  font-size: 25px;
+  /* color: #fff; */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.fa-google:before {
+  content: "Google";
+}
+
+.bg1 {
+  background-color: #ea4335;
+}
+
+.fa-kakao:before {
+  content: "KaKao";
+}
+
+.bg2 {
+  background-color: #fffc00;
+}
+
+/* Shared */
+.loginBtn {
+  box-sizing: border-box;
+  position: relative;
+  /* width: 13em;  - apply for fixed size */
+  margin: 0.2em;
+  padding: 0 15px 0 46px;
+  border: none;
+  text-align: left;
+  line-height: 34px;
+  white-space: nowrap;
+  border-radius: 0.2em;
+  font-size: 16px;
+  color: #fff;
+}
+.loginBtn:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 100%;
+}
+.loginBtn:focus {
+  outline: none;
+}
+.loginBtn:active {
+  box-shadow: inset 0 0 0 32px rgba(0, 0, 0, 0.1);
+}
+
+.signUpSns {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30;
+}
+.google {
+  border-radius: 20px !important;
+  width: 87%;
+}
+button {
+  background: #a6192e;
+  color: #fff;
+  border: none;
+  position: relative;
+  height: 40x;
+  font-family: "Cafe24Shiningstar";
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+}
+button:hover {
+  background: #fff;
+  color: #000000;
+}
+button:before,
+button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #000000;
+  transition: 400ms ease all;
+}
+button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+button:hover:before,
+button:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
+.signUpSns button.google div {
+  background: transparent !important;
+}
+
+.kakao {
+  width: 87%;
+  margin-top: 20px;
+  background-color: #f5e042;
+  color: #000000;
+  border-radius: 20px;
+  box-shadow: 0px 2px rgba(0, 0, 0, 0.24);
+}
+
+.google span {
+  color: #000000;
+}

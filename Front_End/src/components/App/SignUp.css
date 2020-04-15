@@ -1,0 +1,8 @@
+.MuiPaper-root.signUpForm {
+  border-radius: 50px !important;
+  height: 40px !important;
+}
+
+.MuiInputBase-input {
+  height: 10px !important;
+}
